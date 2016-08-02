@@ -2,104 +2,247 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<!--	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+		<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Raleway:700,800,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="style.css">
-        <title>Zadania Bootstrap</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Strona responsive by DS</title>
 	</head>
-<body>
-	<div class="container">
-	  	<div class="row hero text-center">
-			<div class="col-sm-12">
-			  	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+	<body class="fixed-bg">
+<!-- navigation -->
+		<div class="container-full head-bg">			
+			<div class="container ">
+				<nav>
+					<ul class="head">
+					 	<li id="logo"><a href="#home"><img class="logo-img" src="https://placehold.it/150x50"></a></li> 
+					  	<li><a href="#">HOME</a></li>
+					  	<li><a href="#">PAGES</a></li>
+					  	<li><a href="#">FEATURE</a></li>
+					  	<li><a href="#gallery-bk">SERVICES</a></li>
+					  	<li><a href="#">BLOG</a></li>
+					  	<li><a href="#contact">CONTACT</a></li>
+					</ul>				
+				</nav>
 			</div>
-			<div class="col-sm-12">
-			  	<h1>Bootstrap Page <small>from DS with compliments</small></h1>
+		</div>
+<!-- Jumbotron -->
+		<div class="container-full">
+			<div class="row">				
+				<div class="col-m-12 jumborton" >
+					<div class="transbox">
+						<p class="slogan-thin">HERE YOU CAN TYPE</p>
+						<p class="slogan-title">YOUR COMPANY</p>
+						<p class="slogan-title">SLOGAN</p>
+					</div>
+				</div>
 			</div>
-			<div class="col-sm-12">
-			  	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p><br>
+		</div>	
+<!--   Main content -->	
+		<div class="container"> 
+<!--   Pitch points -->		
+			<div class="row">
+				<div class="col-m-4 b-points">
+					<div class="bg-icon bg-icon-color-bk">			
+						<i class="fa fa-book fa-3x"></i>
+					</div>
+					<p class="b-points-sub b-black" >RESEARCH</p>
+					<p class="b-points-txt">The systematic investigation into and study of materials and sources in order to establish facts and reach new conclusions.</p>			
+				</div>
+				<div class="col-m-4 b-points">
+					<div class="bg-icon bg-icon-color-be">
+						<i class="fa fa-laptop fa-3x"></i>
+					</div>
+					<p class="b-points-sub b-blue">FULLY CUSTOMIZABLE</p>
+					<p class="b-points-txt">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae</p>		
+				</div>
+				<div class="col-m-4 b-points">
+					<div class="bg-icon bg-icon-color-bk">
+						<i class="fa fa-cogs fa-3x"></i>
+					</div>
+					<p class="b-points-sub b-black">WORK AND WORK</p>
+					<p class="b-points-txt">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>		
+				</div>
 			</div>
-			<div class="col-sm-12">
-				<button type="button" class="btn btn-primary">Kliknij aby zobaczyć</button><br>
+<!-- featured works -->
+			<div class="row ">
+				<div class="col-offset-2 col-m-8 works-box">	
+						<h1 class="works-title">FEATURED WORKS</h1>
+						<p class="works-txt">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>		
+				</div>	
+			</div>
+<!-- galery -->
+			<div class="row">
+				<div class="col-m-12 gallery">	
+					<div class="row g-center">
+						<div class="col-gallery col-gallery1">					
+							<div class="g-container">						
+							<a href="#"  target="_blank"><p><i class="fa fa-link" aria-hidden="true"></i></p></a>
+							<a href="#"  target="_blank"><p><i class="fa fa-search" aria-hidden="true"></i></p></a>
+							</div>															
+						</div>
+						<div class="col-gallery col-gallery2">					
+							<div class="g-container">
+							<a href="#"  target="_blank"><p><i class="fa fa-link" aria-hidden="true"></i></p></a>
+							<a href="#"  target="_blank"><p><i class="fa fa-search" aria-hidden="true"></i></p></a>
+							</div>															
+						</div>
+						<div class="col-gallery col-gallery3">					
+							<div class="g-container">
+							<a href="#"  target="_blank"><p><i class="fa fa-link" aria-hidden="true"></i></p></a>
+							<a href="#"  target="_blank"><p><i class="fa fa-search" aria-hidden="true"></i></p></a>
+							</div>																
+						</div>
+						<div class="col-gallery col-gallery4">					
+							<div class="g-container">
+							<a href="#"  target="_blank"><p><i class="fa fa-link" aria-hidden="true"></i></p></a>
+							<a href="#"  target="_blank"><p><i class="fa fa-search" aria-hidden="true"></i></p></a>
+							</div>															
+						</div>
+						<div class="col-gallery col-gallery5">					
+							<div class="g-container">
+							<a href="#"  target="_blank"><p><i class="fa fa-link" aria-hidden="true"></i></p></a>
+							<a href="#"  target="_blank"><p><i class="fa fa-search" aria-hidden="true"></i></p></a>
+							</div>																
+						</div>
+						<div class="col-gallery col-gallery6">					
+							<div class="g-container">
+							<a href="#"  target="_blank"><p><i class="fa fa-link" aria-hidden="true"></i></p></a>
+							<a href="#"  target="_blank"><p><i class="fa fa-search" aria-hidden="true"></i></p></a>
+							</div>																
+						</div>
+						<div class="col-gallery col-gallery7">					
+							<div class="g-container">
+							<a href="#"  target="_blank"><p><i class="fa fa-link" aria-hidden="true"></i></p></a>
+							<a href="#"  target="_blank"><p><i class="fa fa-search" aria-hidden="true"></i></p></a>
+							</div>																
+						</div>
+						<div class="col-gallery col-gallery8">					
+							<div class="g-container">
+							<a href="#"  target="_blank"><p><i class="fa fa-link" aria-hidden="true"></i></p></a>
+							<a href="#"  target="_blank"><p><i class="fa fa-search" aria-hidden="true"></i></p></a>
+							</div>																
+						</div>
+						<div class="col-gallery col-gallery9">					
+							<div class="g-container">
+							<a href="#"  target="_blank"><p><i class="fa fa-link" aria-hidden="true"></i></p></a>
+							<a href="#"  target="_blank"><p><i class="fa fa-search" aria-hidden="true"></i></p></a>
+							</div>																
+						</div>
+						<div class="col-gallery col-gallery10">					
+							<div class="g-container">
+							<a href="#"  target="_blank"><p><i class="fa fa-link" aria-hidden="true"></i></p></a>
+							<a href="#"  target="_blank"><p><i class="fa fa-search" aria-hidden="true"></i></p></a>
+							</div>																
+						</div>	
+					</div>
+				</div>	
+			</div>
+<!-- workers -->
+			<div class="row workers-box">
+				<div class="col-m-3 col-s-6">
+					<div class="bg-icon img-circle">
+					<div><p class="workers-p">Secretary</p></div>									
+					</div>
+					<h2 class="worker-h2">Dexter Gilbert</h2>
+				</div>
+				<div class="col-m-3 col-s-6">
+					<div class="bg-icon img-circle">
+					<div><p class="workers-p">Secretary</p></div>							
+					</div>
+					<h2 class="worker-h2">Mary Collier</h2>
+				</div>
+				<div class="col-m-3 col-s-6">
+					<div class="bg-icon img-circle">
+					<div><p class="workers-p">Secretary</p></div>					
+					</div>
+					<h2 class="worker-h2">Stefan Morrison</h2>
+				</div>
+				<div class="col-m-3 col-s-6">
+					<div class="bg-icon img-circle">
+					<div><p class="workers-p">Secretary</p></div>					
+					</div>
+					<h2 class="worker-h2">Bill Smith</h2>
+				</div>
+			</div>
+<!-- promo -->
+			<div class="row bg-promo">
+				<div class="col-offset-2 col-m-3 promo-down">
+					<div><img class="img-promo" src="http://www.miloscpo30.net/wp-content/uploads/2015/07/Screen-Shot-2015-07-02-at-15.28.34.png" alt="some_text"></div>
+				</div>	
+				<div class="col-m-7 col-s-12 promo-txt">	
+					<p class="promo-title">YOUR AWSOME PROMO TITLE</p>
+					<div class="promo-info promo-info1">Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan</div>
+					<div class="promo-info promo-info2">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae Nam dui mi, tincidunt quis, accumsa nNam dui mi, tincidunt quis, accumsan</div>
+				</div>					
+			</div>
+<!-- numbers -->
+			<div class="row num-be">		
+				<div class="col-offset-2 col-m-2 col-s-6">
+					<div class="num-size">455</div>									
+						<p class="num-sub b-blue">Followers</p>
+				</div>
+				<div class="col-m-2 col-s-6">
+					<div class="num-size">1991</div>									
+						<p class="num-sub b-blue">Since</p>
+				</div>	
+				<div class="col-m-2 col-s-6">
+					<div class="num-size ">806</div>									
+						<p class="num-sub b-blue">Happy clients</p>
+				</div>	
+				<div class="col-m-2 col-s-6">
+					<div class="num-size">923</div>									
+						<p class="num-sub b-blue">Projects</p>
+				</div>		
 			</div>
 		</div>
 
-<!-- gallery -->
-	<div class="hero text-center">
-		<div class="row">
-			<div class="col-sm-12">
-			<h2>GALERIA</h2>
-			</div>
-				<div class="row text-center">
-				<div class="col-sm-6 col-md-3 hero"><img src="http://placehold.it/400x400" alt="image" class="img-responsive img-thumbnail"></div>
-				<div class="col-sm-6 col-md-3 hero" ><img src="http://placehold.it/400x400" alt="image" class="img-responsive img-thumbnail"></div>
-				<div class="col-sm-6 col-md-3 hero" ><img src="http://placehold.it/400x400" alt="image" class="img-responsive img-thumbnail"></div>
-				<div class="col-sm-6 col-md-3 hero" ><img src="http://placehold.it/400x400" alt="image" class="img-responsive img-thumbnail"></div>
-			</div>
+<!-- footer -->
+		<div class="container-full footer-bg">	
+			<div class="container"> 
+				<div id="contact" class="row">
+					<div class="col-offset-1 col-m-10">	
+						<div class="row ">
+							<div class="col-m-4 footer-al">
+								<h3 class="h3-footer">ABOUT US  <svg class="line-svg"><rect class="line-svg-rect"/>------</svg></h3>
+								<p class="footer-txt">The systematic investigation into and study of materials and sources in order to establish facts and reach new conclusions.</p>			
+							</div>
+
+							<div class="col-m-4 footer-al">
+								<h3 class="h3-footer">GET IN TOUCH  <svg class="line-svg"><rect class="line-svg-rect"/>------</svg></h3>
+								<div class="footer-txt adress">Address:<br><br><br>Phone:<br><br><br>Email:</div>	
+								<div class="footer-txt adress-detail">66 South Street.<br>Window 6 Wonderland<br><br>+440 458254587 - Office<br>+440 353435654 - Fax<br><br>freepik@sitename.com</div>
+							</div>
+
+							<div class="col-m-4 footer-al">
+								<h3 class="h3-footer">SOCIAL MEDIA  <svg class="line-svg"><rect class="line-svg-rect"/>------</svg></h3>
+								<p class="footer-txt">Pellentesque habitant morbi tristique senectus et netus et malesuada</p>	
+								<div class="footer-social-icons">
+									<ul class="social-icons">
+										<li><a href="" class="social-icon"> <i class="fa fa-facebook "></i></a></li>
+										<li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+										<li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+										<li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+										<li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+										<li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+									</ul>
+								</div>	
+							</div>
+						</div>	
+					</div>	
+				</div>
+			</div>	
 		</div>
-	</div>
-<!-- tabela -->
-	<div class="hero">
-		<div class="row">
-			<div class="col-sm-12">
-				<h2 class="text-center">Tabela</h2>
-			</div>
-			<div class="col-sm-12">
-				<table class="table table-striped table-bordered table-hover">
-				    <thead>
-					    <tr>
-					       <th>Imię</th>
-					       <th>Nazwisko</th>
-					       <th>Email</th>
-					    </tr>
-					</thead>
-				    <tbody>
-				      `	<tr>
-				        	<td>Jan</td>
-				        	<td>Kowalski</td>
-				      		<td>jan@example.com</td>
-				      	</tr>
-				      	<tr>
-				        	<td>Janusz</td>
-				        	<td>Zawadzki</td>
-				        	<td>janusz@example.com</td>
-				      	</tr>
-				      	<tr>
-				        	<td>Anna</td>
-				        	<td>Zawadzka</td>
-				        	<td>anna@example.com</td>
-				      	</tr>
-				   	</tbody>
-				</table>
-			</div>
-		</div>
-	</div>
-	<div class="hero">
-		<div class="row">
-			<div class="col-sm-12">
-				<h2 class="text-center">Formularz kontaktowy</h2>
-				<form>
-					<div class="form-group">
-					    <label for="exampleInputEmai1">Email</label>
-					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+
+<!-- copyright -->		
+		<div class="container-full copyright-txt">	
+			<div class="container"> 
+				<div class="row copyright-txt">
+					<div class="col-offset-1 col-m-11">
+					<h6 class="copyright-pos">Copyright DS Ltd.</h6>
 					</div>
-					<div class="form-group">
-					    <label for="exampleInputPassword1">Hasło</label>
-					    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Hasło">
-					</div>
-					<div class="form-group">
-					    <label for="exampleInputFile">Przesyłanie pliku</label>
-					    <input type="file" id="exampleInputFile">
-					</div>
-					<textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea><br>
-				  	<button type="submit" class="btn btn-info">Wyślij</button>
-				</form>
-			</div>
-		</div>
-	</div>
-	</div>
-</body>
+				</div>
+			</div>	
+		</div>			
+	</body>
 </html>

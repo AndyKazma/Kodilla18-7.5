@@ -1,0 +1,623 @@
+/* theme colors */
+/* header_bg down_bg pitch_pt_bg featured_title pitch_pt_title */
+$theme-color1: #313332
+/* footer_bg numbers*/
+$theme-color2: #252726
+/* pitch_pt_bg2 pitch_pt_title2 numbers_txt*/
+$theme-color3: #00c7e8
+/* promo_title promo_txt footer_title*/
+$theme-color4: #fff
+/* txt_on_light */
+$theme-color5: #8d8d8d
+/* txt_on_dark */
+$theme-color6: #b6b6b6
+/* nav_active */
+$theme-color7: #4CAF50
+
+$theme-font1: 'Merriweather Sans'
+
+.theme-font2
+  font-family: Raleway
+  font-weight: 700
+
+.theme-font3
+  font-family: Raleway
+  font-weight: 800
+
+.theme-font4
+  font-family: Raleway
+  font-weight: 900 
+
+html
+  box-sizing: border-box
+
+*
+  box-sizing: inherit
+  &:before, &:after
+    box-sizing: inherit
+
+body
+  font-family: $theme-font1, sans-serif
+  font-size: 100%
+  margin: 0
+
+.fixed-bg
+  background-image: url(http://img11.deviantart.net/db7c/i/2010/172/0/5/cloudiny_like_texture_by_capricorn7769.jpg)
+  min-height: 500px
+  background-attachment: fixed
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+
+.container-full
+  width: 100%
+
+.head-bg
+  height: 60px
+  position: fixed
+  top: 0
+  background-color: $theme-color1
+
+@media screen and (max-width: 767px)
+  .head-bg
+    position: static
+
+.container
+  width: 100%
+  max-width: 1200px
+  margin: 0 auto
+  padding: 0
+
+.row
+  &:before, &:after
+    content: ""
+    display: table
+    clear: both
+
+[class*="col-"]
+  float: left
+  min-height: 1px
+  padding: 12px
+
+@media screen and (max-width: 767px)
+  [class*="col-"]
+    width: 100%
+
+@media screen and (max-width: 767px)
+  /* For tablets: */
+  .col-s-1
+    width: 8.33%
+  .col-s-2
+    width: 16.66%
+  .col-s-3
+    width: 25%
+  .col-s-4
+    width: 33.33%
+  .col-s-5
+    width: 41.66%
+  .col-s-6
+    width: 50%
+  .col-s-7
+    width: 58.33%
+  .col-s-8
+    width: 66.66%
+  .col-s-9
+    width: 75%
+  .col-s-10
+    width: 83.33%
+  .col-s-11
+    width: 91.66%
+  .col-s-12
+    width: 100%
+
+@media (min-width: 768px)
+  /* For desktop: */
+  .col-m-1
+    width: 8.33%
+  .col-m-2
+    width: 16.66%
+  .col-m-3
+    width: 25%
+  .col-m-4
+    width: 33.33%
+  .col-m-5
+    width: 41.66%
+  .col-m-6
+    width: 50%
+  .col-m-7
+    width: 58.33%
+  .col-m-8
+    width: 66.66%
+  .col-m-9
+    width: 75%
+  .col-m-10
+    width: 83.33%
+  .col-m-11
+    width: 91.66%
+  .col-m-12
+    width: 100%
+  .col-offset-1
+    margin-left: 8.33%
+  .col-offset-2
+    margin-left: 16.66%
+  .col-offset-3
+    margin-left: 25%
+  .col-offset-4
+    margin-left: 33.33%
+  .col-offset-5
+    margin-left: 41.66%
+  .col-offset-6
+    margin-left: 50%
+  .col-offset-7
+    margin-left: 58.33%
+  .col-offset-8
+    margin-left: 66.66%
+  .col-offset-9
+    margin-left: 75%
+  .col-offset-10
+    margin-left: 83.33%
+  .col-offset-11
+    margin-left: 91.66%
+  .col-offset-12
+    margin-left: 100%
+
+/*-- navigation --*/
+
+.head
+  list-style-type: none
+  margin: 0
+  padding: 0
+  overflow: hidden
+  background-color: $theme-color1
+  li
+    float: right
+    min-width: 7vw
+    text-align: center
+  a
+    display: block
+    padding: 2vh
+    text-decoration: none
+    color: $theme-color4
+    font-size: 1em
+    overflow: hidden
+    &:hover
+      color: $theme-color3
+      text-shadow: 0 0 5px $theme-color4
+    &:active
+      color: $theme-color7
+
+#logo
+  float: left
+
+.logo-img
+  width: auto
+  height: 2vh
+
+@media screen and (max-width: 767px)
+  #logo
+    float: none
+    border-bottom: 2px solid $theme-color4
+  .head
+    li
+      float: none
+      border-bottom: 2px solid $theme-color4
+    a
+      padding: 3vh
+      font-size: 1.1em
+    li:nth-child(odd)
+      background-color: $theme-color2
+
+/*-- Jumbotron --*/
+
+.jumborton
+  width: 100%
+  height: 380px
+  padding-right: 0
+  padding-top: 50px
+  box-sizing: border-box
+  text-align: center
+  background: url(https://pixabay.com/static/uploads/photo/2014/12/22/19/59/macbook-577758_960_720.jpg)
+  background-size: cover
+  background-position: center
+  overflow: hidden
+  display: flex
+  align-items: center
+
+@media screen and (max-width: 767px)
+  .jumborton
+    height: 50vh
+    position: relative
+
+/*-- Jumbotron slogan --*/
+
+div.transbox
+  text-align: left
+  line-height: 70%
+  width: 440px
+  height: 125px
+  background-color: rgba(49, 51, 50, 0.5)
+  margin-left: auto
+  p
+    margin: 5%
+    color: $theme-color4
+
+.slogan-title
+  @extend .theme-font4
+  font-size: 1.7em
+  color: $theme-color4
+
+.slogan-thin
+  font-size: 2em
+  font-weight: 300
+  color: $theme-color4
+
+/*-- Pitch points --*/
+
+.b-points
+  text-align: center
+  margin-top: 2vw
+  padding: 2vw
+
+[class^="fa fa-"]
+  text-align: center
+
+.bg-icon
+  > .fa
+    margin-top: 15px
+  display: inline-block
+  margin: 0 auto
+  height: 80px
+  width: 80px
+  border-radius: 10px
+  color: $theme-color4
+
+.bg-icon-color-bk
+  background-color: $theme-color1
+
+.bg-icon-color-be
+  background-color: $theme-color3
+
+.b-points-txt
+  font-size: 0.8em
+  color: $theme-color5
+  margin-top: 5px
+  line-height: 170%
+
+.b-points-sub
+  @extend .theme-font3
+  display: block
+  font-size: 1.2em
+  margin: 1vw 0 0 0
+  text-transform: uppercase
+
+.b-black
+  color: $theme-color1
+
+.b-blue
+  color: $theme-color3
+
+@media screen and (max-width: 767px)
+  .b-points:first-of-type
+    margin-top: 8vw
+  .b-points-txt
+    font-size: 1em
+
+/*-- featured works --*/
+
+.works-box
+  text-align: center
+  margin-bottom: 30px
+
+.works-title
+  @extend .theme-font4
+  color: $theme-color1
+  margin-bottom: 8px
+
+.works-txt
+  font-size: 0.8em
+  color: $theme-color5
+  margin: 0 20px
+
+@media screen and (max-width: 767px)
+  .works-txt
+    font-size: 1em
+
+/*-- galery --*/
+
+.col-gallery1
+  background-image: url(http://i.imgur.com/AGEgF5B.jpg)
+
+.col-gallery2, .col-gallery3
+  background-image: url(https://static.pexels.com/photos/51969/model-female-girl-beautiful-51969-small.jpeg)
+
+.col-gallery4
+  background-image: url(https://static.pexels.com/photos/38568/apple-imac-ipad-workplace-38568-large.jpeg)
+
+.col-gallery5
+  background-image: url(http://i.imgur.com/7Ff7rDB.jpg)
+
+.col-gallery6
+  background-image: url(http://i.imgur.com/KUt6tGb.jpg)
+
+.col-gallery7
+  background-image: url(http://i.imgur.com/Ue2tUMV.jpg)
+
+.col-gallery8
+  background-image: url(https://static.pexels.com/photos/68704/pexels-photo-68704-large.jpeg)
+
+.col-gallery9
+  background-image: url(http://i.imgur.com/AGEgF5B.jpg)
+
+.col-gallery10
+  background-image: url(https://static.pexels.com/photos/58461/pexels-photo-58461-large.jpeg)
+
+
+.col-gallery
+  width: 20%
+  height: 240px
+  display: flex
+  align-items: center
+  justify-content: center
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  &:hover
+    -webkit-filter: grayscale(80%)
+    filter: grayscale(80%)
+
+@media screen and (max-width: 1200px)
+  .col-gallery
+    height: 20vw
+
+.gallery
+  padding: 0
+
+.g-container
+  display: flex
+  align-items: center
+  justify-content: center
+  p
+    display: inline-block
+    height: 40px
+    width: 40px
+    border-radius: 4px
+    padding: 10px 5px 0px 5px
+    background-color: $theme-color4
+    margin: 10px
+    opacity: 0.05
+    text-align: center
+    transition: .4s
+  &:hover p
+    opacity: 0.8
+  > i
+    color: $theme-color2
+
+@media screen and (max-width: 767px)
+  .col-gallery
+    width: 50%
+    height: 50vw
+  .g-container p
+    opacity: 0.8
+
+.g-center
+  margin: auto
+
+/*-- workers --*/
+
+.img-circle
+  width: 164px
+  height: 164px
+  border-radius: 82px
+  -webkit-border-radius: 82px
+  -moz-border-radius: 82px
+  background: url(https://static.pexels.com/photos/51969/model-female-girl-beautiful-51969-small.jpeg) no-repeat
+  background-size: cover
+  background-position: center
+  transition: all 1s ease
+  &:hover
+    transform: scale(1.1)
+    cursor: pointer
+
+.workers-box
+  text-align: center
+  width: 100%
+  margin: 0 auto
+  padding: 40px
+
+.worker-h2
+  font-family: Raleway
+  font-weight: 700
+  font-size: 16px
+  color: $theme-color1
+
+.workers-p
+  color: $theme-color4
+  text-shadow: 0 0 5px $theme-color2
+  margin-top: 130px
+
+.img-circle:hover .workers-p
+  color: $theme-color3
+
+/*-- promo --*/
+
+.img-promo
+  display: block
+  width: 100%
+  padding-top: 5vw
+
+.bg-promo
+  background-color: rgba(170, 170, 170, 0.4)
+
+.promo-txt
+  text-align: left
+  margin-top: 4vw
+  color: $theme-color4
+
+.promo-title
+  @extend .theme-font4
+  font-size: 1.7em
+  margin-bottom: 1vw
+
+.promo-info
+  display: inline-block
+  overflow: hidden
+  font-size: 0.8em
+  margin-bottom: 2vw
+
+.promo-info1
+  width: 60%
+  height: auto
+  height: 170px
+
+.promo-info2
+  width: 30%
+  height: 170px
+  padding-left: 12px
+  overflow: hidden
+
+.promo-down
+  padding-bottom: 0
+
+@media screen and (max-width: 767px)
+  .promo-info
+    font-size: 0.9em
+  .promo-down
+    display: none
+  .promo-txt
+    margin-top: 0
+
+/*-- numbers --*/
+
+.num-size
+  @extend .theme-font4
+  font-size: 6vmin
+
+.num-sub
+  display: block
+  @extend .theme-font3
+  font-size: 1em
+  margin: 5px 0 0 0
+  text-transform: uppercase
+
+.num-be
+  text-align: center
+  margin-top: 30px
+  margin-bottom: 30px
+
+/* -- footer --*/
+
+.h3-footer
+  color: $theme-color4
+  margin-left: 0px
+
+.footer-al
+  text-align: left
+
+.footer-txt
+  font-size: 0.8em
+  color: $theme-color6
+
+.adress
+  float: left
+  padding: 0
+  width: 30%
+  @extend .theme-font2
+  color: $theme-color4
+
+.adress-detail
+  float: left
+  padding: 0
+  width: 70%
+
+.line-svg
+  width: 70px
+  height: 8px
+
+.line-svg-rect
+  width: 70px
+  height: 3px
+  fill: rgb(255, 255, 255)
+  stroke-width: 1
+  stroke: rgb(0, 0, 0)
+
+.footer-bg
+  background-color: $theme-color1
+
+/* -- social icons --*/
+
+.footer-social-icons
+  width: 100%
+  display: block
+  margin: 0 auto
+
+.social-icon
+  color: $theme-color4
+
+ul.social-icons
+  margin-top: 0px
+
+.social-icons
+  a
+    margin-right: 4px
+  li
+    vertical-align: top
+    display: inline
+  a
+    color: $theme-color4
+    text-decoration: none
+
+.social-base
+  -o-transition: .5s
+  -ms-transition: .5s
+  -moz-transition: .5s
+  -webkit-transition: .5s
+  transition: .5s
+  background-color: #00c7e7  
+
+.fa-facebook
+  @extend .social-base
+  padding: 10px 13px 7px 13px
+
+  &:hover
+    background-color: #3d5b99
+
+.fa-twitter
+  @extend .social-base  
+  padding: 10px 10px 7px 10px
+  &:hover
+    background-color: #00aced
+
+.fa-rss
+  @extend .social-base
+  padding: 10px 11px 7px 11px
+  &:hover
+    background-color: #eb8231
+
+.fa-youtube
+  @extend .social-base
+  padding: 10px 11px 7px 11px
+  &:hover
+    background-color: #e64a41
+
+.fa-linkedin
+  @extend .social-base
+  padding: 10px 11px 7px 11px
+  &:hover
+    background-color: #0073a4
+
+.fa-google-plus
+  @extend .social-base
+  margin-top: 10px
+  padding: 10px 7px 7px 7px
+  &:hover
+    background-color: #e25714
+
+/*-- copyright --*/
+
+.copyright-txt
+  background-color: $theme-color2
+  color: $theme-color6
+  text-align: center
+
+.copyright-pos
+  margin: 0
