@@ -1,0 +1,51 @@
+[33mcommit 007d9c8b1ced3da1d6ee0f098624806c5d14bc1d[m
+Author: slavek.d <slavek@123321.pl>
+Date:   Tue Aug 2 11:01:31 2016 +0200
+
+    wymieniam pliki na pliki projektu z sass
+
+[33mcommit 6f525e4a806588708a26421cf181cfd457b2713b[m
+Merge: c2bd3f1 addc360
+Author: AndyKazma <slavek@123321.pl>
+Date:   Tue Aug 2 06:38:10 2016 +0200
+
+    Merge pull request #1 from AndyKazma/poprawki-html
+    
+    Poprawiona struktura HTML.
+    @marez Zrobię merge w tym miejscu ale można też innaczej :star:
+
+[33mcommit addc360437d6d986f3197b9d92a28adec16ba9f5[m
+Author: Mariusz Pepliński <m.peplinski@livespace.pl>
+Date:   Mon Aug 1 09:52:35 2016 +0200
+
+    zamknięcie head, wcięcia
+
+[33mcommit c2bd3f1daababae7f8023e452ecb312c16361c20[m
+Author: slavek.d <slavek@123321.pl>
+Date:   Sun Jul 31 12:51:45 2016 +0200
+
+    zmiana treści
+
+[33mcommit ca9ed08959bf1fe7f320befe3065fb1675bd124d[m
+Author: slavek.d <slavek@123321.pl>
+Date:   Sun Jul 31 12:43:01 2016 +0200
+
+    zmiana nazwy pliku demo
+
+[33mcommit 0e046d8ceed1a8b336a59fc769a048a11a6f18c2[m
+Author: slavek.d <slavek@123321.pl>
+Date:   Sat Jul 30 12:02:39 2016 +0200
+
+    adding ignore file
+
+[33mcommit 688994f086f43af4c4b4e2a914ccb181fb92e8f5[m
+Author: slavek.d <slavek@123321.pl>
+Date:   Sat Jul 30 10:57:52 2016 +0200
+
+    tekst
+
+[33mcommit 512fa8fb6f312484790714c9bc9406219040a071[m
+Author: slavek.d <slavek@123321.pl>
+Date:   Sat Jul 30 10:36:55 2016 +0200
+
+    cwiczenie z commit
