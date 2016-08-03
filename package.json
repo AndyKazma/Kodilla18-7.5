@@ -1,0 +1,28 @@
+{
+  "name": "kodilla-grunt-zadanie-7.6",
+  "version": "1.0.0",
+  "description": "test dzialania pluginow grunt",
+  "main": "index.js",
+  "scripts": {
+    "test": "kodilla-tst"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndyKazma/Kodilla18-7.5.git"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "Slawomir Dobroszek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndyKazma/Kodilla18-7.5/issues"
+  },
+  "homepage": "https://github.com/AndyKazma/Kodilla18-7.5#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.0"
+  }
+}
